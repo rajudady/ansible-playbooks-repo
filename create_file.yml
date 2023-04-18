@@ -1,0 +1,10 @@
+---
+- name: my test playbook
+  hosts: all
+  become: yes
+  tasks: 
+  - name: creating a file
+    file: 
+      path: /home/u1/demofile
+      state: touch 
+

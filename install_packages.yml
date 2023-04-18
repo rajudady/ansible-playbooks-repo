@@ -1,0 +1,10 @@
+---
+- name: my test plybook
+  hosts: webservers
+  become: yes
+  tasks:
+  - name: install packages
+    yum: 
+     name: git
+     state: installed 
+

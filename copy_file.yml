@@ -1,0 +1,12 @@
+---
+- name: my test playbook
+  hosts: all
+  become: yes
+  tasks: 
+  - name: copy a file
+     copy : 
+    src: /home/u1/ index.html
+    dest: /home/u1
+    mode: 0600
+    owner: akash 
+
